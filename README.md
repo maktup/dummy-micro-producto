@@ -12,11 +12,19 @@ Los LINKs del 'MICROSERVICIO' son:
      ---------------------------
   
      - consultarProductos: 
-	   http://localhost:8080/dummy-micro-producto/get/productos
+	   $ curl http://localhost:8080/dummy-micro-producto/get/productos
   
      - consultarProductosPorId: 
-	   http://localhost:8080/dummy-micro-producto/get/productos/{id}
+	   $ curl http://localhost:8080/dummy-micro-producto/get/productos/{id}
 	 
+	 
+	   
+     - consultarClientes [CLUSTER-IP]: 
+	   $ curl http://my-producto-service-ci:8080/dummy-micro-producto/get/productos
+	   
+     - consultarClientesPorId [CLUSTER-IP]: 
+	   $ curl http://my-producto-service-ci:8080/dummy-micro-producto/get/productos/{id}
+ 
  
 DETALLE:
 ------- 
